@@ -38,8 +38,8 @@ public class VoteLogActivity extends AppCompatActivity {
                 ViewFactory.convertDpsToPixels(this, 5));
 
         Button eraseButton = ViewFactory.createButton(this, "Clear Votes", 5,
-                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 0, Gravity.RIGHT | Gravity.TOP);
-        eraseButton.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 0, Gravity.END | Gravity.TOP);
+        eraseButton.setBackground(getResources().getDrawable(R.drawable.button_shape));
 
         eraseButton.setOnClickListener(new View.OnClickListener() {
             @Override

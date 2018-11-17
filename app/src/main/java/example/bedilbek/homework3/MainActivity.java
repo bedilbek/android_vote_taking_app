@@ -83,10 +83,10 @@ public class MainActivity extends AppCompatActivity {
         linearLayout = ViewFactory.setMargins(linearLayout, 20, 0, 0, 0);
 
         firstname = ViewFactory.createEditText(this, "First Name", 5);
-        firstname.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+        firstname.setBackground(getResources().getDrawable(R.drawable.field_shape));
         ViewFactory.setMargins(firstname, 0, 0, 0, 5);
         lastname = ViewFactory.createEditText(this, "Last Name", 5);
-        lastname.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+        lastname.setBackground(getResources().getDrawable(R.drawable.field_shape));
 
         linearLayout.addView(firstname);
         linearLayout.addView(lastname);
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         mainLayout.addView(drinks_text);
 
         LinearLayout drinkSpinnerLayout = ViewFactory.createLinearLayout(this, ConstraintLayout.LayoutParams.HORIZONTAL);
-        drinkSpinnerLayout.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+        drinkSpinnerLayout.setBackground(getResources().getDrawable(R.drawable.field_shape));
         drinks = ViewFactory.createSpinner(this);
         drinks.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, order_drinks));
         drinkSpinnerLayout.addView(drinks);
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         mainLayout.addView(foods_text);
 
         LinearLayout foodSpinnerLayout = ViewFactory.createLinearLayout(this, ConstraintLayout.LayoutParams.HORIZONTAL);
-        foodSpinnerLayout.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+        foodSpinnerLayout.setBackground(getResources().getDrawable(R.drawable.field_shape));
         foods = ViewFactory.createSpinner(this);
         foods.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, order_foods));
         foodSpinnerLayout.addView(foods);
@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         Button voteButton = ViewFactory.createButton(this, "VOTE", 4);
         voteButton = ViewFactory.setMargins(voteButton, 20, 0, 0, 0);
         voteButton.setWidth(convertDpsToPixels(210));
-        voteButton.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+        voteButton.setBackground(getResources().getDrawable(R.drawable.button_shape));
         voteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         Button checkVotesButton = ViewFactory.createButton(this, "CHECK VOTES", 4);
         checkVotesButton.setWidth(convertDpsToPixels(210));
         checkVotesButton = ViewFactory.setMargins(checkVotesButton, 20, 0, 0, 0);
-        checkVotesButton.setBackground(getResources().getDrawable(R.drawable.widget_shape));
+        checkVotesButton.setBackground(getResources().getDrawable(R.drawable.button_shape));
         checkVotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -196,9 +196,6 @@ public class MainActivity extends AppCompatActivity {
                 agreementCustomizations();
             }
         });
-
-        ;
-
     }
 
     private void agreementCustomizations() {
